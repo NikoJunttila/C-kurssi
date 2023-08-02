@@ -1,3 +1,5 @@
+/* xdd test */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,17 +25,17 @@ void intTaulu(int koko){
 	int i,j,random,maxi;
 	double total;
 	int taulukko[koko];
-	//tehdään taulukko jossa random numeroita N verran
+	//tehdï¿½ï¿½n taulukko jossa random numeroita N verran
 	for(i=0; i<=koko;i++){ 
 		random = rand() % 1000 + 1;
 		taulukko[i] = random;
 		total += taulukko[i]; //plussataan kaikki yhteen
 		printf("%d. %d\n",i,taulukko[i]);
 		if(maxi<taulukko[i]){
-		maxi = taulukko[i]; //etitään isoin luku
+		maxi = taulukko[i]; //etitï¿½ï¿½n isoin luku
 	}		
 }
-//väärin päin looppaus
+//vï¿½ï¿½rin pï¿½in looppaus
 printf("lopusta alkuun looppi \n");
 for(j=koko;j>=0;j--){
 	printf("%d. %d\n",j,taulukko[j]);
